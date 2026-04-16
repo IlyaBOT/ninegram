@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30000000000000000000001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* Foundation.framework */; };
+		A30000000000000000000002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* UIKit.framework */; };
+		A30000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000022 /* Assets.xcassets */; };
+		A30000000000000000000004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* main.m */; };
+		A30000000000000000000005 /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* NGAppDelegate.m */; };
+		A30000000000000000000006 /* NGAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* NGAppCoordinator.m */; };
+		A30000000000000000000007 /* NGDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* NGDialog.m */; };
+		A30000000000000000000008 /* NGMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* NGMessage.m */; };
+		A30000000000000000000009 /* NGMemoryImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* NGMemoryImageCache.m */; };
+		A3000000000000000000000A /* NGAvatarProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* NGAvatarProvider.m */; };
+		A3000000000000000000000B /* NGServiceContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* NGServiceContainer.m */; };
+		A3000000000000000000000C /* NGDateFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* NGDateFormatting.m */; };
+		A3000000000000000000000D /* NGMessageLayoutCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* NGMessageLayoutCache.m */; };
+		A3000000000000000000000E /* NGMockDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* NGMockDataFactory.m */; };
+		A3000000000000000000000F /* NGMockMessagingBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* NGMockMessagingBackend.m */; };
+		A30000000000000000000010 /* NGTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* NGTheme.m */; };
+		A30000000000000000000011 /* NGAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* NGAvatarView.m */; };
+		A30000000000000000000012 /* NGBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* NGBadgeView.m */; };
+		A30000000000000000000013 /* NGChatPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001A /* NGChatPlaceholderViewController.m */; };
+		A30000000000000000000014 /* NGDialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001B /* NGDialogCell.m */; };
+		A30000000000000000000015 /* NGChatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001C /* NGChatsViewController.m */; };
+		A30000000000000000000016 /* NGChatInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001D /* NGChatInputBar.m */; };
+		A30000000000000000000017 /* NGMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001E /* NGMessageCell.m */; };
+		A30000000000000000000018 /* NGChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001F /* NGChatViewController.m */; };
+		A30000000000000000000019 /* NGSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000020 /* NGSettingsViewController.m */; };
+		A3000000000000000000001A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* Foundation.framework */; };
+		A3000000000000000000001B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* XCTest.framework */; };
+		A3000000000000000000001C /* NinegramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000024 /* NinegramTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = Ninegram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* Ninegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ninegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000002 /* NinegramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinegramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000004 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A20000000000000000000005 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000006 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A20000000000000000000007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A20000000000000000000008 /* NGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegate.m; sourceTree = "<group>"; };
+		A20000000000000000000009 /* NGAppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAppCoordinator.m; sourceTree = "<group>"; };
+		A2000000000000000000000A /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000C /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000D /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000E /* NGDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDialog.m; sourceTree = "<group>"; };
+		A2000000000000000000000F /* NGMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMessage.m; sourceTree = "<group>"; };
+		A20000000000000000000010 /* NGMemoryImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMemoryImageCache.m; sourceTree = "<group>"; };
+		A20000000000000000000011 /* NGAvatarProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAvatarProvider.m; sourceTree = "<group>"; };
+		A20000000000000000000012 /* NGServiceContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGServiceContainer.m; sourceTree = "<group>"; };
+		A20000000000000000000013 /* NGDateFormatting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDateFormatting.m; sourceTree = "<group>"; };
+		A20000000000000000000014 /* NGMessageLayoutCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMessageLayoutCache.m; sourceTree = "<group>"; };
+		A20000000000000000000015 /* NGMockDataFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMockDataFactory.m; sourceTree = "<group>"; };
+		A20000000000000000000016 /* NGMockMessagingBackend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMockMessagingBackend.m; sourceTree = "<group>"; };
+		A20000000000000000000017 /* NGTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGTheme.m; sourceTree = "<group>"; };
+		A20000000000000000000018 /* NGAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAvatarView.m; sourceTree = "<group>"; };
+		A20000000000000000000019 /* NGBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGBadgeView.m; sourceTree = "<group>"; };
+		A2000000000000000000001A /* NGChatPlaceholderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGChatPlaceholderViewController.m; sourceTree = "<group>"; };
+		A2000000000000000000001B /* NGDialogCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDialogCell.m; sourceTree = "<group>"; };
+		A2000000000000000000001C /* NGChatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGChatsViewController.m; sourceTree = "<group>"; };
+		A2000000000000000000001D /* NGChatInputBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGChatInputBar.m; sourceTree = "<group>"; };
+		A2000000000000000000001E /* NGMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMessageCell.m; sourceTree = "<group>"; };
+		A2000000000000000000001F /* NGChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGChatViewController.m; sourceTree = "<group>"; };
+		A20000000000000000000020 /* NGSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGSettingsViewController.m; sourceTree = "<group>"; };
+		A20000000000000000000021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000000000000000000023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000024 /* NinegramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinegramTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000000000000000000001 /* Foundation.framework in Frameworks */,
+				A30000000000000000000002 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3000000000000000000001A /* Foundation.framework in Frameworks */,
+				A3000000000000000000001B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* App */,
+				A10000000000000000000005 /* UI */,
+				A1000000000000000000000A /* Core */,
+				A1000000000000000000000E /* Backends */,
+				A10000000000000000000010 /* Resources */,
+				A10000000000000000000011 /* Tests */,
+				A10000000000000000000012 /* Frameworks */,
+				A10000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* Ninegram.app */,
+				A20000000000000000000002 /* NinegramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* main.m */,
+				A20000000000000000000008 /* NGAppDelegate.m */,
+				A20000000000000000000009 /* NGAppCoordinator.m */,
+				A10000000000000000000004 /* Config */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000004 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* Base.xcconfig */,
+				A2000000000000000000000B /* Debug.xcconfig */,
+				A2000000000000000000000C /* Release.xcconfig */,
+				A2000000000000000000000D /* Tests.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000005 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000006 /* Common */,
+				A10000000000000000000007 /* Chats */,
+				A10000000000000000000008 /* Chat */,
+				A10000000000000000000009 /* Settings */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000006 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000017 /* NGTheme.m */,
+				A20000000000000000000018 /* NGAvatarView.m */,
+				A20000000000000000000019 /* NGBadgeView.m */,
+				A2000000000000000000001A /* NGChatPlaceholderViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000007 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001B /* NGDialogCell.m */,
+				A2000000000000000000001C /* NGChatsViewController.m */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000008 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001D /* NGChatInputBar.m */,
+				A2000000000000000000001E /* NGMessageCell.m */,
+				A2000000000000000000001F /* NGChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000009 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000020 /* NGSettingsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000B /* Models */,
+				A1000000000000000000000C /* Services */,
+				A1000000000000000000000D /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000E /* NGDialog.m */,
+				A2000000000000000000000F /* NGMessage.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000010 /* NGMemoryImageCache.m */,
+				A20000000000000000000011 /* NGAvatarProvider.m */,
+				A20000000000000000000012 /* NGServiceContainer.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000013 /* NGDateFormatting.m */,
+				A20000000000000000000014 /* NGMessageLayoutCache.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000E /* Backends */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000F /* MockBackend */,
+			);
+			path = Backends;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000000F /* MockBackend */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000015 /* NGMockDataFactory.m */,
+				A20000000000000000000016 /* NGMockMessagingBackend.m */,
+			);
+			path = MockBackend;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000021 /* Info.plist */,
+				A20000000000000000000022 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000011 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000023 /* Info.plist */,
+				A20000000000000000000024 /* NinegramTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* Foundation.framework */,
+				A20000000000000000000005 /* UIKit.framework */,
+				A20000000000000000000006 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* Ninegram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000002 /* Build configuration list for PBXNativeTarget "Ninegram" */;
+			buildPhases = (
+				A40000000000000000000001 /* Sources */,
+				A40000000000000000000002 /* Frameworks */,
+				A40000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ninegram;
+			productName = Ninegram;
+			productReference = A20000000000000000000001 /* Ninegram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000002 /* NinegramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000003 /* Build configuration list for PBXNativeTarget "NinegramTests" */;
+			buildPhases = (
+				A40000000000000000000004 /* Sources */,
+				A40000000000000000000005 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = NinegramTests;
+			productName = NinegramTests;
+			productReference = A20000000000000000000002 /* NinegramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 8.3.3;
+					};
+					A50000000000000000000002 = {
+						CreatedOnToolsVersion = 8.3.3;
+						TestTargetID = A50000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "Ninegram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A10000000000000000000001;
+			productRefGroup = A10000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* Ninegram */,
+				A50000000000000000000002 /* NinegramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A40000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000000000000000000003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30000000000000000000004 /* main.m in Sources */,
+				A30000000000000000000005 /* NGAppDelegate.m in Sources */,
+				A30000000000000000000006 /* NGAppCoordinator.m in Sources */,
+				A30000000000000000000007 /* NGDialog.m in Sources */,
+				A30000000000000000000008 /* NGMessage.m in Sources */,
+				A30000000000000000000009 /* NGMemoryImageCache.m in Sources */,
+				A3000000000000000000000A /* NGAvatarProvider.m in Sources */,
+				A3000000000000000000000B /* NGServiceContainer.m in Sources */,
+				A3000000000000000000000C /* NGDateFormatting.m in Sources */,
+				A3000000000000000000000D /* NGMessageLayoutCache.m in Sources */,
+				A3000000000000000000000E /* NGMockDataFactory.m in Sources */,
+				A3000000000000000000000F /* NGMockMessagingBackend.m in Sources */,
+				A30000000000000000000010 /* NGTheme.m in Sources */,
+				A30000000000000000000011 /* NGAvatarView.m in Sources */,
+				A30000000000000000000012 /* NGBadgeView.m in Sources */,
+				A30000000000000000000013 /* NGChatPlaceholderViewController.m in Sources */,
+				A30000000000000000000014 /* NGDialogCell.m in Sources */,
+				A30000000000000000000015 /* NGChatsViewController.m in Sources */,
+				A30000000000000000000016 /* NGChatInputBar.m in Sources */,
+				A30000000000000000000017 /* NGMessageCell.m in Sources */,
+				A30000000000000000000018 /* NGChatViewController.m in Sources */,
+				A30000000000000000000019 /* NGSettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3000000000000000000001C /* NinegramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* Ninegram */;
+			targetProxy = A80000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A60000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Debug;
+		};
+		A60000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Release;
+		};
+		A60000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000B /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninegram.app;
+				PRODUCT_NAME = Ninegram;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A60000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000C /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninegram.app;
+				PRODUCT_NAME = Ninegram;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A60000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000D /* Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Library/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninegram.tests;
+				PRODUCT_NAME = NinegramTests;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ninegram.app/Ninegram";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A60000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000D /* Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Library/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninegram.tests;
+				PRODUCT_NAME = NinegramTests;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ninegram.app/Ninegram";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "Ninegram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000001 /* Debug */,
+				A60000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000002 /* Build configuration list for PBXNativeTarget "Ninegram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000003 /* Debug */,
+				A60000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000003 /* Build configuration list for PBXNativeTarget "NinegramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000005 /* Debug */,
+				A60000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}

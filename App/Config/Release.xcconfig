@@ -1,0 +1,4 @@
+#include "Base.xcconfig"
+
+COPY_PHASE_STRIP = YES
+VALIDATE_PRODUCT = YES
