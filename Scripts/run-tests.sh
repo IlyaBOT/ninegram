@@ -5,7 +5,7 @@ ROOT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PROJECT_PATH="${PROJECT_PATH:-$ROOT_DIR/Ninegram.xcodeproj}"
 SCHEME="${SCHEME:-Ninegram}"
 DERIVED_DATA_PATH="${DERIVED_DATA_PATH:-$ROOT_DIR/build/DerivedData}"
-DESTINATION="${TEST_DESTINATION:-platform=iOS Simulator,name=iPhone 5}"
+DESTINATION="${TEST_DESTINATION:-platform=iOS Simulator,name=iPhone 8}"
 
 xcodebuild \
   -project "$PROJECT_PATH" \

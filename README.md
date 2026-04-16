@@ -49,11 +49,13 @@ bash ./Scripts/install-device.sh
 - `build-release.sh` builds a Release configuration. Signing stays disabled unless `ALLOW_SIGNING=1`.
 - `run-tests.sh` runs the XCTest bundle against a simulator destination. Override with `TEST_DESTINATION=...` if your local simulator names differ.
 - `install-device.sh` builds for `iphoneos` and pushes the `.app` bundle with `ios-deploy`.
+- `.github/workflows/objective-c-xcode.yml` is configured for a `self-hosted` macOS runner with Xcode 13.4.1 because GitHub-hosted images no longer provide `macos-11`/`macos-12`.
+- Recommended self-hosted labels for that workflow: `self-hosted`, `macOS`, `legacy-ios`, `xcode-13`.
 
 Example:
 
 ```bash
-TEST_DESTINATION='platform=iOS Simulator,name=iPhone 5,OS=10.3.1' bash ./Scripts/run-tests.sh
+TEST_DESTINATION='platform=iOS Simulator,name=iPhone 8' bash ./Scripts/run-tests.sh
 ```
 
 ## Project Layout
